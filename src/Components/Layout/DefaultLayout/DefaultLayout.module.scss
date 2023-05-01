@@ -1,0 +1,15 @@
+.wrapper {
+    display:flex;
+    justify-content: space-around;
+}
+
+.container {
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    min-height: 1000px;
+}
