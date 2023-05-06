@@ -6,6 +6,10 @@
     height: var(--default-layout-header-height);
     box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
     display: flex;
+    position: fixed;
+    background-color: var(--white);
+    width: 100%;
+    z-index: 10;
     justify-content: space-around;
     padding: 0 var(--default-layout-width-horizontal-spacer);
 }
@@ -20,6 +24,10 @@
 
 .logo {
     width: 300px;
+
+    img {
+        height:100%;
+    }
 }
 
 .more-btn {

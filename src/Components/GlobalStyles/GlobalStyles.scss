@@ -1,57 +1,76 @@
-@import "normalize.css";
+@import 'normalize.css';
 
 :root {
     --primary: #fe2c55;
     --white: #fff;
     --black: #000;
     --text-color: #333;
+    --font-family: 'ProximaNova', sans-serif;
 
     --default-layout-header-height: 60px;
     --default-layout-width-horizontal-spacer: 24px;
+    --menu-width: 230px;
 }
 
 @font-face {
-    font-family: "ProximaNova";
+    font-family: 'ProximaNova';
     font-weight: 400;
-    src: url("/assets/fonts/Proxima-Nova-Regular.woff2");
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
 }
 
 @font-face {
-    font-family: "ProximaNova";
+    font-family: 'ProximaNova';
     font-weight: 600;
-    src: url("/assets/fonts/ProximaNova-Semibold.woff2");
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
 }
 
 @font-face {
-    font-family: "ProximaNova";
-    src: url("/assets/fonts/Proxima-Nova-Bold.woff");
+    font-family: 'ProximaNova';
+    src: url('/assets/fonts/Proxima-Nova-Bold.woff');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: "SofiaPro";
-    src: url("/assets/fonts/sofiapro-bold.woff");
+    font-family: 'SofiaPro';
+    src: url('/assets/fonts/sofiapro-bold.woff');
     font-weight: 700;
 }
 
 html {
+}
 
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 * {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    font-family: 'ProximaNova', sans-serif;
+    font-family: var(--font-family);
     color: var(--text-color);
+    overflow-y: overlay;
 }
 
-button, input, [tabindex] {
-    outline:none;
-    border:none;
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
 }
 
 a[href] {
@@ -69,7 +88,7 @@ body .tippy-box {
     background-color: rgba(82, 82, 82, 0.92);
 }
 
-.tippy-box[data-placement^=bottom] > .tippy-arrow {
+.tippy-box[data-placement^='bottom'] > .tippy-arrow {
     color: rgba(82, 82, 82, 0.92);
-    top: -1px
+    top: -1px;
 }

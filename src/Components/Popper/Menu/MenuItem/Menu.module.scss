@@ -1,4 +1,9 @@
+.menu-popper {
+    display: flex;
+}
+
 .menu-header {
+    width: var(--menu-width);
     position: relative;
     height: 50px;
     margin-top: -8px;
@@ -34,4 +39,9 @@
     &:hover {
         background-color:rgba(0, 0, 0, 0.02)
     }
+}
+
+.menu-body {
+    max-height: 350px;
+    overflow-y: auto;
 }
