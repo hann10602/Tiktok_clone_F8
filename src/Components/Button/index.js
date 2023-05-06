@@ -19,10 +19,13 @@ function Button({
     leftIcon=false,
     rightIcon=false,
     disabled=false,
+    item=false,
     children, 
     onClick, 
-    passProps}) {
-    const Component = 'button';
+    passProps,
+    className}) {
+    let Component = 'button';
+    
 
     const props = {
         onClick,
@@ -54,14 +57,15 @@ function Button({
         rounded,
         shadow,
         normal,
-    });
+        item,
+    }, className);
 
     return (
         <>
             <Component className={classes} {...props}>
-                {leftIcon && <span class={cx("icon")}>{leftIcon}</span>}
+                {leftIcon && <span className={cx("icon")}>{leftIcon}</span>}
                 <span>{children}</span>
-                {rightIcon && <span class={cx("icon")}>{rightIcon}</span>}
+                {rightIcon && <span className={cx("icon")}>{rightIcon}</span>}
             </Component>
         </>
     )

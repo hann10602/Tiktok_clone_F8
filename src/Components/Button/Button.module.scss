@@ -1,10 +1,10 @@
 .wrapper {
     min-width: 100px;
     padding: 8px 16px;
-    margin-left: 16px;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 700;
+    font-family: 'ProximaNova', sans-serif;
     background-color: var(--white);
     border: 1px solid transparent;
 }
@@ -17,7 +17,7 @@
     cursor: pointer;
 
     &:hover {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
     }
 }
 
@@ -32,17 +32,19 @@
 
 .normal {
     color: rgba(22, 24, 35, 1);
-    border-color: rgba(22, 24, 35, 0.1);
+    border: solid 1px rgba(0, 0, 0, 0.1);
     font-weight: 600;
     border-radius: 2px;
 
     &:hover {
-        background-color:rgba(0, 0, 0, 0.02)
+        background-color: rgba(0, 0, 0, 0.02);
     }
+}
 
-    .icon {
-        padding-right: 10px;
-    }
+.icon {
+    display: inline-block;
+    width: 25px;
+    padding-right: 10px;
 }
 
 .rounded {
