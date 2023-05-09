@@ -1,0 +1,56 @@
+.preview {
+    width: 320px;
+    padding: 20px;
+}
+
+.preview-header {
+    height: 44px;
+    width: 100%;
+    margin-bottom: 12px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.preview-avatar {
+    border-radius: 999px;
+}
+
+.preview-btn {
+    width: 105px;
+    height: 34px;
+    background-color: var(--primary);
+    font-weight: 600;
+    border-radius: 4px;
+    color: var(--white);
+}
+
+.preview-name {
+    font-size: 1.1rem;
+}
+
+.preview-username {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.preview-stat {
+    margin-top: 8px;
+
+    b {
+        font-size: 1rem;
+        margin-right: 6px;
+    }
+
+    span {
+        font-size: 1rem;
+        margin-right: 12px;
+        color: rgba(22, 24, 35, 0.75);
+    }
+}
+
+.check {
+    color:rgb(32 213 236);
+    font-size: 0.8rem;
+    margin-left: 6px;
+}

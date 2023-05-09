@@ -16,6 +16,10 @@ function Menu({ children, items = [], onChange = defaultFn }) {
     const [history, setHistory] = useState([{ data: items }]);
     const current = history[history.length - 1];
 
+    const handleResetToFirstPage = () => {
+        setHistory((prev) => prev.splice(0, 1))
+    }
+
     const renderItem = () => {
         return current.data.map((item, index) => {
             const isParent = !!item.children;
@@ -56,7 +60,7 @@ function Menu({ children, items = [], onChange = defaultFn }) {
                     </PopperWrapper>
                 </div>
             )}
-            onHide={() => setHistory((prev) => prev.splice(0, 1))}
+            onHide={handleResetToFirstPage}
         >
             {children}
         </Tippy>

@@ -1,0 +1,52 @@
+.wrapper {
+    padding: 16px 0;
+}
+
+.label {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 0.87rem;
+    font-weight: 600;
+    padding: 0 8px 8px 8px;
+}
+
+//account
+
+.account {
+    display: flex;
+    height: 48px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: backgroundColor ease-in-out 200ms;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border-radius: 999px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgba(22, 24, 35, 0.5);
+}
+
+
+.check {
+    color:rgb(32 213 236);
+    font-size: 0.8rem;
+    margin-left: 6px;
+}

@@ -29,7 +29,7 @@ import config from '~/config';
 
 const cx = classNames.bind(styles);
 
-const currentUser = true;
+const currentUser = false;
 
 const menu_item = [
     {

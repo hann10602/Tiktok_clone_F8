@@ -1,0 +1,33 @@
+.wrapper {
+    position: fixed;
+    width: 232px;
+    padding: 20px 0 26px 8px;
+}
+
+.login {
+    padding: 20px 8px 16px;
+}
+
+.login-desc {
+    color: rgba(22, 24, 35, 0.5);
+    margin-bottom: 28px;
+}
+
+.footer {
+    width: var(--default-sidebar-menu-width);
+}
+
+.link-container {
+    width: var(--default-sidebar-menu-width);
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-name {
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin: 5px 6px 0 0;
+    font-weight: 700;
+    color: rgba(22, 24, 35, 0.5);
+}

@@ -8,10 +8,9 @@
     width: 100%;
     min-height: 1000px;
     display: flex;
-    padding: 0 var(--default-layout-width-horizontal-spacer);
 }
 
 .content {
-    flex: 1;
+    margin-left: 232px;
     min-height: 1000px;
 }
