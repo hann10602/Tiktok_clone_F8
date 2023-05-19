@@ -7,7 +7,7 @@ import classNames from 'classnames/bind';
 import { Wrapper as PopperWrapper } from '~/Components/Popper';
 import AccountItems from '~/Components/AccountItems';
 import styles from './Search.module.scss';
-import { useDebounce } from '~/hooks';
+import { useDebounce } from '~/Hooks';
 import * as searchService from '~/services/searchService';
 
 const cx = classNames.bind(styles);
